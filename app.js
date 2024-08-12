@@ -1,3 +1,4 @@
+let windowWidth = window.innerWidth;
 let slider = document.querySelector('.slider'),
   sliderList = slider.querySelector('.slider-list'),
   sliderTrack = slider.querySelector('.slider-track'),
@@ -33,8 +34,14 @@ let slider = document.querySelector('.slider'),
     }
     sliderTrack.style.transform = `translate3d(-${slideIndex * slideWidth}px, 0px, 0px)`;
 
-    prev.classList.toggle('disabled', slideIndex === 0);
-    next.classList.toggle('disabled', slideIndex === 1);
+    if (windowWidth >= 800){
+      prev.classList.toggle('disabled', slideIndex === 0);
+      next.classList.toggle('disabled', slideIndex === 1);
+    }
+    else{
+      prev.classList.toggle('disabled', slideIndex === 0);
+      next.classList.toggle('disabled', slideIndex === 2);
+    }
   },
   swipeStart = function() {
     let evt = getEvent();
