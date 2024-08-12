@@ -9,6 +9,13 @@
 body{
 background-color: #2D3430;;
 }
+header{
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
+}
 .header-container{
     display: flex;
     align-items: center;
@@ -18,6 +25,9 @@ background-color: #2D3430;;
     padding-right: 24px;
     padding-left: 24px;
     margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
 }
 .logo img{
     height: 52px;
@@ -272,4 +282,466 @@ font-weight: 400;
   font-size: 16px;
 font-style: normal;
 font-weight: 400;
+}
+.faq-h2-head{
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 130px;
+  margin-bottom: 32px;
+}
+.accordeon{
+
+  max-width: 1200px;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid fff;
+  margin: auto;
+
+}
+
+.accordeon-heading h2{
+  color: #FFF;
+
+  font-family: Prompt;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 106.67px; /* 177.783% */
+  text-transform: uppercase;
+  
+}
+.accordeon-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.faq-flex{
+display: flex;
+justify-content: space-between;
+width: 450px;
+align-items: center;
+}
+.faq-flex p{
+  color: #FFF;
+  font-family: Prompt;
+}
+#div1, #div2, #div3, #div4, #div5{
+  margin: auto;
+  max-width: 930px;
+  text-align: left;
+  color: #FFF;
+  font-family: Prompt;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+
+}
+
+.svg-icon,
+.svg-icon2, 
+.svg-icon3,
+.svg-icon4,
+.svg-icon5 {
+  transition: transform 0.3s ease;
+}
+
+.svg-icon.rotated,
+.svg-icon2.rotated,
+.svg-icon3.rotated, 
+.svg-icon4.rotated,
+.svg-icon5.rotated{
+  transform: rotate(45deg); /* Поворот на 45 градусов, чтобы получился крестик */
+}
+.accordeon-content p{
+  margin-bottom: 20px;
+}
+.footer-container{
+  
+  max-width: 1248px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin: auto;
+  margin-top: 150px;
+  margin-bottom: 88px;
+}
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 766px;
+height: 401px;
+padding: 40px;
+
+border-radius: 10px;
+border: 1px rgba(255, 255, 255, 0.10);
+
+background: rgba(255, 255, 255, 0.10);
+
+backdrop-filter: blur(14.699999809265137px);
+
+}
+.footer-contact-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 613px;
+  margin-top: 61px;
+}
+.footer-contact-links a{
+  color: #FFF;
+
+/* HYPERLINK */
+font-family: Prompt;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+}
+.footer-contact-tel-mail{
+display: flex;
+flex-direction: column;
+}
+.footer-contact-tel-mail a{
+  color: #FFF;
+
+  /* HYPERLINK */
+  font-family: Prompt;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer-contact-tel-mail p{
+  color: #FFF;
+
+/* H3 */
+font-family: Prompt;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+/* Скрываем бургер-меню по умолчанию */
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Занимает всю ширину экрана */
+  height: 100vh; /* Занимает всю высоту экрана */
+  background-color: #2D3430;
+  color: #fff;
+  z-index: 1000;
+  text-align: center;
+}
+
+.burger-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 100px; /* Можно настроить в зависимости от того, где вы хотите расположить элементы */
+}
+
+.burger-menu ul li {
+  margin: 56px 0;
+}
+
+.burger-menu ul li a {
+  color: #fff;
+  font-family: Prompt;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Иконка бургера */
+.burger-icon {
+  display: none;
+  width: 69px;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  z-index: 1001;
+  border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.10);
+background: rgba(255, 255, 255, 0.10);
+backdrop-filter: blur(14.699999809265137px);
+
+}
+.burger-stick{
+  background-color: #fff;
+  width: 33px;
+  height: 1.5px;
+  margin: auto;
+  margin-top: 2.5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+.no-scroll {
+  overflow: hidden;
+  position: fixed; /* Фиксируем положение для предотвращения прокрутки */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.burger-stick:nth-child(1) {
+  top: 10px;
+}
+
+.burger-stick:nth-child(2) {
+  top: 22px;
+}
+
+.burger-stick:nth-child(3) {
+  top: 24px;
+}
+
+.burger-icon.active .burger-stick {
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.burger-icon.active .burger-stick:nth-child(1) {
+  transform: rotate(45deg);
+  top: 16px;
+}
+
+.burger-icon.active .burger-stick:nth-child(2) {
+  transform: rotate(-45deg);
+  top: 16px;
+}
+
+.burger-icon.active .burger-stick:nth-child(3) {
+  opacity: 0;
+}
+.logo-burger{
+  margin-top: 15px;
+  text-align: left;
+  padding-left: 24px;
+}
+
+
+
+
+.faq-h2-head-mobile{
+  display: none;
+  color: #FFF;
+
+/* BODY3 */
+font-family: Prompt;
+font-size: 40px;
+font-style: normal;
+font-weight: 300;
+width: 300px;
+margin: auto;
+
+margin-top: 37px;
+margin-bottom: 37px;
+
+}
+
+@media (max-width: 800px) {
+  .burger-icon {
+      display: block;
+  }
+}
+.burger-menu.show {
+  display: block;
+}
+
+@media (min-width: 801px) {
+  .burger-menu, .burger-icon {
+      display: none;
+  }
+}
+@media (max-width: 800px) {
+  nav{
+    display: none;
+  }
+  .herosection-first-block{
+    flex-direction: column-reverse;
+    margin-top: 290px;
+  }
+  .interior-design{
+   align-self: flex-start;
+  }
+  .photo{
+    width: 320px;
+    height: 280px;
+    margin-top: -35px;
+    align-self: flex-end;
+    
+  }
+
+  .herosection-first-block svg{
+    margin-top: -160px;
+    width: 250px;
+    z-index: 20;
+    align-self: flex-start;
+  }
+  .herosection-second-block{
+    margin-top: -50px;
+  }
+  .rectangle{
+    height: 2px;
+  background-color: #fff;
+  display: block;
+  width: clamp(16px, 25vw, 268px);
+  margin-right: 13px;
+  }
+  .right-align-text{
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .num{
+    display: none;
+  }
+  .new-arrivals-first-p{
+    font-size: 40px;
+    margin-top: 78px;
+  }
+  .new-arrivals{
+    max-width: 300px;
+  }
+  .paragraph{
+    color: #A1A1A1;
+
+font-family: Prompt;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 310px;
+  }
+  .view-all{
+    display: none;
+  }
+  .flex{
+    flex-direction: column;
+  }
+  .slider{
+    max-width: 300px;
+  }
+  .slider-list{
+    width: 300px;
+  }
+  .slide{
+    margin-right: 0px;
+  }
+  .new-arrivals-second-p{
+    display: none;
+  }
+  .designed-for-you{
+    flex-direction: column;
+
+  }
+  .designed-for-you-flex{
+    width: 300px;
+  }
+  .align-text{
+    width: 264px;
+    text-align: left;
+    align-self: flex-end;
+    color: #A1A1A1;
+
+font-family: Prompt;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .designed-for-you-flex h2{
+    width: 194px;
+    font-size: 40px;
+font-style: normal;
+font-weight: 300;
+margin-bottom: 32px;
+  }
+  .designed-for-you-flex p{
+    display: none;
+  }
+  .img-design-destop{
+    display: none;
+  }
+  .img-design-mobile{
+    background-image: url(../images/design-mobile.png);
+    height: 594px;
+    width: 300px;
+    background-size: contain;
+    margin: auto;
+    margin-top: 58px;
+
+  }
+  .faq-h2-head{
+    display: none;
+  }
+  .faq-h2-head-mobile{
+    display: block;
+    font-size: 50px;
+  }
+  .accordeon-heading h2{
+    font-size: 29px;
+  }
+  .svg-icon, .svg-icon2, .svg-icon3, .svg-icon4, .svg-icon5{
+    width: 29px;
+    height: 29px;
+  }
+  .faq-flex{
+    width: 230px;
+  }
+  .footer-contact{
+    width: 300px;
+    margin: auto;
+    font-size: 17px;
+    height: 310px;
+  }
+  .footer-contact-links{
+    width: 270px;
+    
+  }
+  .footer-contact-links a{
+    font-size: 16px;
+    
+  }
+  .footer-contact-links-div{
+    margin: auto;
+  }
+  .footer-contact{
+    padding: 15px;
+  }
+  .footer-contact-tel-mail a{
+    font-size: 17px;
+  }
+
+  .footer-contact-tel-mail p{
+    margin-bottom: 0px;
+  }
+  .footer-contact-tel-mail{
+    margin-top: 40px;
+    gap: 10px;
+  }
+}
+@media (max-width: 340px){
+  .photo{
+    width: 320px;
+    height: 280px;
+    margin-top: -35px;
+    align-self: flex-start;
+    
+  }
 }
