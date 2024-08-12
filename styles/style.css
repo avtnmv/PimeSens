@@ -9,6 +9,9 @@
 body{
 background-color: #2D3430;;
 }
+.wrapper{
+  overflow-x: hidden;
+}
 header{
   position: sticky;
   top: 0;
