@@ -7,7 +7,8 @@
     font-family: 'Prompt', sans-serif;
 }
 body{
-background-color: #2D3430;;
+background-color: #2D3430;
+cursor: url(../images/curosor-arrow.svg), auto;
 }
 .wrapper{
   overflow-x: hidden;
@@ -15,9 +16,10 @@ background-color: #2D3430;;
 header{
   position: sticky;
   top: 0;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   z-index: 1;
+
+
 }
 .header-container{
     display: flex;
@@ -556,6 +558,32 @@ margin-bottom: 37px;
 
 }
 
+
+.style-image{
+  width: 395px;
+  height: 414px;
+}
+.styles-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.styles-container{
+  max-width: 1248px;
+  padding-right: 24px;
+  padding-left: 24px;
+  margin: auto;
+}
+.our-styles-h2{
+margin-top: 45px;
+margin-bottom: 24px;
+color: #FFF;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+}
+
+
 @media (max-width: 800px) {
   .burger-icon {
       display: block;
@@ -736,6 +764,18 @@ margin-bottom: 32px;
     margin-top: 40px;
     gap: 10px;
   }
+  .styles-wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .style-image{
+    width: 325px;
+    height: 340px;
+  }
+  .our-styles-h2{
+    font-size: 24px;
+  }
+
 }
 @media (max-width: 340px){
   .photo{
@@ -745,4 +785,5 @@ margin-bottom: 32px;
     align-self: flex-start;
     
   }
+
 }
