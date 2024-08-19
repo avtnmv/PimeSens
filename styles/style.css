@@ -35,6 +35,7 @@ header{
 .logo img{
     height: 52px;
     width: 120px;
+    display: block;
 }
 .navbar-links a{
     color: #FFF;
