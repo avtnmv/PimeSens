@@ -16,7 +16,8 @@ cursor: url(../images/curosor-arrow.svg), auto;
 header{
   position: sticky;
   top: 0;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
   z-index: 1;
 
 
