@@ -558,7 +558,7 @@ font-size: 15px;
 .dropdown-menu{
   text-align: left;
   margin-left: 23px;
-  margin-top: 250px;
+  margin-top: 20px;
 }
 .faq-h2-head-mobile{
 display: none;
@@ -1027,6 +1027,7 @@ margin-bottom: 32px;
   .mountain-norway{
     width: 320px;
     margin: auto;
+    margin-top: 150px;
   }
 
 }
