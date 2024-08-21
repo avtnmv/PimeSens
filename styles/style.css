@@ -553,6 +553,7 @@ background: rgba(217, 217, 217, 0.22);
 backdrop-filter: blur(2px);
 cursor: pointer;
 font-size: 15px;
+appearance: none;
 }
 
 .dropdown-menu{
