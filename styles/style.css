@@ -7,6 +7,7 @@
   text-decoration: none;
   list-style: none;
   font-family: 'Prompt', sans-serif;
+  scroll-behavior: smooth;
 }
 body{
 background-color: #2D3430;
@@ -542,9 +543,23 @@ text-align: left;
 padding-left: 24px;
 }
 
+#languageDropdown{
+  padding: 8px 20px;
+  border-radius: 18px;
+border: 1px #FFF;
 
+background: rgba(217, 217, 217, 0.22);
 
+backdrop-filter: blur(2px);
+cursor: pointer;
+font-size: 15px;
+}
 
+.dropdown-menu{
+  text-align: left;
+  margin-left: 23px;
+  margin-top: 250px;
+}
 .faq-h2-head-mobile{
 display: none;
 color: #FFF;
@@ -740,6 +755,19 @@ margin-top: 330px;
 }
 .norway-paragraph-two-photo-mobile{
   display: none;
+}
+.dropdown-links{
+  width: 320px;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.dropdown-links a{
+  font-size: 18px;
+font-style: normal;
+font-weight: 500;
+color: #fff;
 }
 
 @media (max-width: 800px) {
