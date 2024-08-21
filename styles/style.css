@@ -546,7 +546,7 @@ padding-left: 24px;
 #languageDropdown{
   padding: 8px 20px;
   border-radius: 18px;
-border: 1px #FFF;
+border: 1px solid #FFF;
 
 background: rgba(217, 217, 217, 0.22);
 
@@ -554,6 +554,7 @@ backdrop-filter: blur(2px);
 cursor: pointer;
 font-size: 15px;
 appearance: none;
+color: #FFF;
 }
 
 .dropdown-menu{
