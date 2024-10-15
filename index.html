@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -108,57 +110,36 @@
     
               </div>
 
-            <div class="container">
-    
-                <div class="slider">
-                    <div class="slider-list">
-                      <div class="slider-track">
-        
-                        <div class="slide">
-                            <div class="slide-flex">
-                                <img src="./images/slide-one.jpg" alt="">
-                            </div>
-                        </div>
-    
-    
-    
-                        <div class="slide">
-                            <div class="slide-flex">
-                                <img src="./images/slide-two.jpg" alt="">
-                                <div class="slide-name">
-                                </div>
-        
-                            </div>
-                        </div>
-    
-                        <div class="slide">
-                            <div class="slide-flex">
-                                <img src="./images/slide-three.jpg" alt="">
-                                <div class="slide-name">
-                                </div>
-        
-                            </div>
-                        </div>
-
-
-    
-    
-                      </div>
+           
+              <div class="slider-wrapper">
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-content"><img src="./images/slide-one.jpg" alt="" class="slider-img"></div>
                     </div>
-    
-    
-    
-                    <div class="slider-arrows" style="text-align: right;">
-    
-                            <button type="button" class="prev">&larr;</button>
-                            <button type="button" class="next">&rarr;</button>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-content"><img src="./images/slide-two.jpg" alt="" class="slider-img"></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper-slide-content"><img src="./images/slide-three.jpg" alt="" class="slider-img"></div>
                     </div>
                   </div>
-        
-        
-                
-        
-            </div>
+              
+                </div>
+              
+                <div class="sw-cont">
+                  <div class="custom-swiper-pagination"></div>
+                  <div class="swiper-buttons">
+                      <div class="custom-prev">←</div>
+                      <div class="custom-next">→</div>
+                    </div>
+                </div>
+              
+              
+               
+              </div>
+
           </div>
 
 
@@ -335,5 +316,7 @@
 </div>
     <script src="./app.js"></script>
     <script src="burger-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
